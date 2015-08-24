@@ -1,6 +1,61 @@
 <html>
  <head>
-  <style>
+ <script src="http://cloud.github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+	<script type="text/processing" data-processing-target="mycanvas">
+ /* @pjs preload="http://i60.tinypic.com/xlza6w.jpg"
+	@pjs preload = "http://i62.tinypic.com/2e4eyhu.png"; */
+
+    PImage b;	
+	PImage c;
+
+	void setup(){
+     background(0,0);
+	 size(2000,2000);
+	
+
+    b = loadImage("http://i60.tinypic.com/xlza6w.jpg");
+	c =	loadImage("http://i62.tinypic.com/2e4eyhu.png");
+   
+}
+
+var pos1= 0;
+var pos2= 1000;
+
+void draw(){
+    background(0,0);
+	moveGirl();
+	moveMom();
+   
+}
+	
+void moveGirl(){
+	if (pos1 != 350){
+		image (c,pos1,180);
+		pos1= pos1 +5;
+   }
+   else{
+		image(c,350,180);
+   }
+}   
+
+
+void moveMom(){
+	if (pos2 !=750){
+		image(b,pos2,95);
+		pos2= pos2-5;
+	}
+	else{
+		image(b,750,95);
+	}
+}
+
+    
+    
+
+
+
+	</script>
+<style>
   
       p.one{
         color:#EA638C;
@@ -18,22 +73,36 @@
 	    margin-left: 200px;
 	    margin-right: 200px;
       }
-      
+      	#mycanvas { 
+				position:relative;
+				z-index: 20;}
+	#container {
+	position:relative;
+				
+				width: 1350px;
+				z-index:100; }
      
   </style>
+
+
   </head>
   
 <body bgcolor="#FFFFFF">  
 <center>
+<div id="container">
 	<img src = "LOGO.png" style="margin:25px 50px 50px;"width ="800" height = "200">   <!---PRETTY TOUGH LOGO--->
 <p style = "margin: 15px 20px 50px;" class="one">Your parents walk into your room while you're studying biology... " Why don't you take a break from all that studying? It's not going to help you in life anyways. Wouldn't you rather fix your hair or go shopping?"</p>
 	<a href="Parent_B.html">
-		<img src = "Agree_Mom.png" align= "left" height = 250px width =350px>
+		<img src = "Agree_Mom.png" align= "middle" height = 150px width =250px>
 	<a href = "Parent_C.html">
-		<img src = "Get_Angry_Mom.png" align = "middle" height = 250px width =350px>
+		<img src = "Get_Angry_Mom.png" align = "middle" height = 150px width =250px>
 	<a href = "Parent_A.html">
-		<img src = "CS.png" align= "right" height = 250px width =350px >
-    
+		<img src = "CS.png" align= "middle" height = 150px width =250px >
+    	</div>
+		<canvas id="mycanvas"></canvas>
+		
+
 </center>        
-</body>    
+</body>
+   
 </html> 

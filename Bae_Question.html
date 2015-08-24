@@ -1,6 +1,61 @@
 <html>
  <head>
-  <style>
+ <script src="http://cloud.github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+	<script type="text/processing" data-processing-target="mycanvas">
+ /* @pjs preload=""http://i62.tinypic.com/2e4eyhu.png""
+	@pjs preload = "http://i58.tinypic.com/14lhpqf.png"; */
+
+    PImage b;	
+	PImage c;
+
+	void setup(){
+     background(0,0);
+	 size(2000,2000);
+	
+
+    b = loadImage("http://i62.tinypic.com/2e4eyhu.png");
+	c =	loadImage("http://i58.tinypic.com/14lhpqf.png");
+   
+}
+
+var pos1= 0;
+var pos2= 1000;
+
+void draw(){
+    background(0,0);
+	moveGirl();
+	moveBae();
+   
+}
+	
+void moveGirl(){
+	if (pos1 != 350){
+		image (b,pos1,180);
+		pos1= pos1 +5;
+   }
+   else{
+		image(b,350,180);
+   }
+}   
+
+
+void moveBae(){
+	if (pos2 !=750){
+		image(c,pos2,95);
+		pos2= pos2-5;
+	}
+	else{
+		image(c,750,95);
+	}
+}
+
+    
+    
+
+
+
+	</script>
+<style>
   
       p.one{
         color:#EA638C;
@@ -18,28 +73,37 @@
 	    margin-left: 200px;
 	    margin-right: 200px;
       }
-      
+      	#mycanvas { 
+				position:relative;
+				z-index: 20;}
+	#container {
+	position:relative;
+				
+				width: 1350px;
+				z-index:100; }
      
   </style>
+
+
   </head>
   
+
 <body bgcolor="#FFFFFF">  
 <center>
-	<img src = "LOGO.png" width ="900" height = "185">
-<p class="one"> You and your best friends are out to dinner and you choose to order a brownie for dessert. One friend says, " Do you really want to eat that?" Do you...</p>
-	
-	<a href="Bff_A.html">
-		<img src="Bff_Agree.png" alt="You Just Chose to Agree with BFF" align= "left" width="350px" height="250px" border="0">
-	</a>
-	
-	<a href="Bff_B.html">
-		<img src="ignore.png" alt="You Ignored Your BFF" align= "middle" width="350px" height="250px" border="0">
-	</a>
+<div id="container">
+	<img src = "LOGO.png" style="margin:25px 50px 50px;"width ="800" height = "200">   <!---PRETTY TOUGH LOGO--->
+	<p style = "margin: 15px 20px 50px;" class="one">You're on a date. You decided to go all natural and ditch the makeup. Your date tells you that you look better with makeup on. You..</p>
+	<a href="Bae_A.html">
+		<img src = "Agree_Mom.png" align= "middle" height = 150px width =250px>
+	<a href = "Bae_B.html">
+		<img src = "Get_Angry_Mom.png" align = "middle" height = 150px width =250px>
+	<a href = "Bae_C.html">
+		<img src = "CS.png" align= "middle" height = 150px width =250px >
+    	</div>
+		<canvas id="mycanvas"></canvas>
 		
-	<a href="Bff_C.html">
-		<img src="Bff_Defend.png" alt="Defend" align= "right" width="350px" height="250px" border="0">
-	</a>
-    
+
 </center>        
-</body>    
+</body>
+   
 </html> 

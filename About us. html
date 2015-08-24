@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <style>
+            
+            #h1 {
+			font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+			font-size: 24px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 500;
+			line-height: 26.3999996185303px;
+		}
+            
+             #image{
+                float: left;
+                height: 20px
+                width: 400px;
+             }
+        
+        
+        
+            #paragraph{
+                float: right;
+               	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    			font-size: 24px;
+    			font-style: normal;
+    			font-variant: normal;
+    			font-weight: 500;
+    			line-height: 26.3999996185303px;
+            }
+            
+
+				div.bio {
+					background-color:white;
+					color:white;
+					margin: 95px 10px 55px 500px;
+					padding:20px;
+					
+				}	
+			
+				
+            
+        </style>
+     
+    </head>
+	
+  
+	<body bgcolor="#000000">
+		
+	  <br>
+	  
+	  <div id='h1'>
+			<center>
+			<h1><font color="#EA638C">About Us</font></h1>
+			</center>
+	    </div> 
+	   
+		
+
+		<img src="jenpix.png" alt="My Pixel" width="200px" height="250px" align="left" style="margin: 10px 20px ;" vspace="25">
+		<div class="bio">
+		<h2><font color="#EA638C">Jenaba Sow</h2>
+
+		<p><font color="000000">Hello! My name is Jenaba Sow</p>
+		</div> 
+
+	<br>
+		
+		<img src="char_piskel.jpg" alt="My Pixel" width="200px" height="250px" align="left" style="margin: 10px 20px ;" vspace="25">
+		
+		<div class="bio">
+		<h2><font color="#EA638C">Charlotte E. Chapman</h2>
+
+		<p><font color="#000000">My name is Charlotte Chapman and I attend the Scholars Academy High School. I am currently interested
+		in Pre-Med and now I have a deeper interest in Computer Science, thanks to Girls Who Code. Besides attaining 
+		a 95 average, I volunteer at a soup kitchen and attend a dance school every Saturday for a total of six hours. 
+		When I do not volunteer at the soup kitchen on Saturday mornings, I am tutoring a five year old girl in my favorite
+		subject, Math. I am always looking for activities, which is how I found Girls Who Code. I have little experience with
+		Computer Science, but I know that understanding computer science is a valuable skill to have.</p>
+		</div>
+    <br>
+        <img src="dinapix.jpg" alt="My Pixel" width="200px" height="250px" align="left" style="margin: 10px 20px ;" vspace="25">
+		<div class="bio">
+		<h2><font color="#EA638C">Dina Himed</h2>
+
+		<p><font color="#000000">Hi! My name is Dina and I am from New York City. I joined Girls Who Code with no experience with computer science. I
+		love art and technology so it was really cool to create projects that combines my favorite subjects. I used to feel like I could not provide help
+		to those in need that will leave a significant impact with technology. Now, I feel like my knowledge and computer science skills gives me the ability 
+		to do so.</p>
+		</div>
+
+		<img src="Gabi.png" alt="My Pixel" width="200px" height="250px" align="left" style="margin: 10px 20px ;" vspace="25">
+		<div class="bio">
+		<h2><font color="#EA638C">Gabrielle Bloom</h2>
+
+		
+		<p><font color="#000000">I'm Gabrielle Blom and I'm a rising senior at Hunter College High School. 
+		I'm interested in international relations, computer science and acting. I enjoy baking, listening to podcasts and binge watching television.</p>
+		</div> 
+
+		
+		
+		<br>
+		<img src="jojopix.png" alt="My Pixel" width="200px" height="250px" align="left" style="margin: 10px 20px ;" vspace="25">
+		<div class="bio">
+		<h2><font color="#EA638C">Joanne Hernandez</h2>
+
+		<p><font color="#000000">Hey, what’s up; I’m Jo Anne! I’m just your average teen from Brooklyn, with my interests being in film,
+		theater, art, sports, and food.	I am currently a rising senior at Poly Prep,
+		and I hope to someday double major in computer science and something else.
+		I chose to help make this Pretty Tough, because I want girls and guys to call themselves feminists without feeling any shame.
+		I also want teen girls to have a place they can go to for advice and encouragement that they will actually use.</p>
+		</div> 
+
+    
+    
+    
+    
+    
+    
+</html>

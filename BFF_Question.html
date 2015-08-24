@@ -1,6 +1,61 @@
-html>
+<html>
  <head>
-  <style>
+ <script src="http://cloud.github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+	<script type="text/processing" data-processing-target="mycanvas">
+ /* @pjs preload="http://i60.tinypic.com/xlza6w.jpg"
+	@pjs preload = "http://i58.tinypic.com/2zdr9kn.png"; */
+
+    PImage b;	
+	PImage c;
+
+	void setup(){
+     background(0,0);
+	 size(2000,2000);
+	
+
+    b = loadImage("http://i60.tinypic.com/xlza6w.jpg");
+	c =	loadImage("http://i58.tinypic.com/2zdr9kn.png");
+   
+}
+
+var pos1= 0;
+var pos2= 1000;
+
+void draw(){
+    background(0,0);
+	moveGirl();
+	moveBFF();
+   
+}
+	
+void moveGirl(){
+	if (pos1 != 350){
+		image (c,pos1,180);
+		pos1= pos1 +5;
+   }
+   else{
+		image(c,350,180);
+   }
+}   
+
+
+void moveBFF(){
+	if (pos2 !=750){
+		image(b,pos2,95);
+		pos2= pos2-5;
+	}
+	else{
+		image(b,750,95);
+	}
+}
+
+    
+    
+
+
+
+	</script>
+<style>
   
       p.one{
         color:#EA638C;
@@ -18,9 +73,18 @@ html>
 	    margin-left: 200px;
 	    margin-right: 200px;
       }
-      
+      	#mycanvas { 
+				position:relative;
+				z-index: 20;}
+	#container {
+	position:relative;
+				
+				width: 1350px;
+				z-index:100; }
      
   </style>
+
+
   </head>
   
 <body bgcolor="#FFFFFF">  
